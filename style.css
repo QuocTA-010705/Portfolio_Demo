@@ -2,7 +2,7 @@ body{
     /* background-image: url(./background.jpg);
     background-repeat: no-repeat;
     background-size: cover; */
-    background: linear-gradient(342deg, rgba(2, 0, 36, 1) 0%, rgb(20, 20, 33) 0%, rgb(61, 98, 104) 100%);
+    background: linear-gradient(342deg, rgba(2, 0, 36, 1) 0%, rgb(20, 20, 33) 0%, rgb(52, 74, 78) 100%);
     min-height: 100vh; 
 
 }
