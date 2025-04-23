@@ -1,9 +1,13 @@
 body{
-    background: linear-gradient(135deg, #101010, #1d0030);
-    min-height: 100vh;
+    /* background-image: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: linear-gradient(342deg, rgba(2, 0, 36, 1) 0%, rgb(20, 20, 33) 0%, rgb(61, 98, 104) 100%);
+    min-height: 100vh; 
+
 }
 .container{
-    
+    padding-top: 30px;
     padding: 20px;
     margin: 0 190px;
    max-width: 1200px;
@@ -21,6 +25,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    backdrop-filter: blur(10px);
+    border: 0.5px solid transparent;
+    
 }
 .logo{
     font-size: 40px;
@@ -134,8 +141,10 @@ ul a span:hover{
     .image_container{
         position: relative;
         flex: 1;
-        min-width: 300x;
         text-align: center;
+    }
+    .image_container img{
+        border-radius: 100%;
     }
 /* ........................... */
     .features{
