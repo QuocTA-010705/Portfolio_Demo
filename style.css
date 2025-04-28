@@ -1,18 +1,23 @@
-body{
+body,html{
     /* background-image: url(./background.jpg);
     background-repeat: no-repeat;
     background-size: cover; */
-    background: linear-gradient(342deg, rgba(2, 0, 36, 1) 0%, rgb(20, 20, 33) 0%, rgb(52, 74, 78) 100%);
-    min-height: 100vh; 
+    background: linear-gradient(90deg, #283c66 0%, #0c1629 100%);
     color: white;
-    font-family: "Roboto", sans-serif;
-    z-index: 3;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
 
 }
+body, .button, .button_wrapper{
+    font-family: "Roboto", sans-serif;
+}
 .container{
-    padding-top: 30px;
-    padding: 20px;
-    margin: 0 190px;
+    width: 100%;
+    position: relative;
+    padding: 0 20px;
+    margin: 0 auto;
    max-width: 1200px;
    
 }
@@ -29,6 +34,7 @@ body{
     z-index: -3;
 }
 header{
+    margin-top: 20px;
     /* background-color: rgba(172, 222, 195, 0.526); */
     display: flex;
     justify-content: space-between;
@@ -85,12 +91,11 @@ ul a span:hover{
     align-items: center;
     margin-top: 70px;
     flex-wrap: wrap;
+    gap: 40px;
    }
    .content{
     flex: 1;
     max-width: 600px;
-    padding-right: 30px;
-   
    }
     .content h1{
         color: white;
@@ -172,31 +177,58 @@ ul a span:hover{
             gap: 40px;
         }
      }
-     @media (max-width: 1200px){
+     @media (max-width: 800px){
+        content{
+            justify-content: center;
+            align-items: center;
+        }
         .image_container img {
-            width: 500px;
+            margin-left: -50px;
+            width: 400px;
             height: fit-content;
-            .content h1{
-                font-size: 50px;
-                white-space: nowrap;
-            }
+            text-align: center;
+
+        }
+        .logo{
+            
+            white-space: nowrap;
+        }
+        .content .button_wrapper{
+            justify-content: center;
+            align-items: center;
         }
      }
+     @media(max-width: 800px){
+        .div content{
+            align-items: center;
+        }
+        .content p,
+        .content h1{
+            text-align: center;
+            font-size: 45px;
+            white-space: nowrap;
+        }
+        .content h1 span{
+            font-size: 45px;
+        }
+
+     }
+
      .bar{
         display: none;
-        font-size: 40px;
-        color: rgb(59, 55, 55);
+        font-size: 33px;
+        color: #9932CC;
         cursor: pointer;
      }
+
+
     .image_container{
         position: relative;
         flex: 1;
         text-align: center;
     }
     .image_container img{
-        width: 300x;
-        height: 800px;
-        margin-bottom: 200px;
+        margin-bottom: 100px;
     }
 /* ........................... */
     .features{
